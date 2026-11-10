@@ -31,14 +31,7 @@ exe の作り方と公開先。v1.0（2026-11-10）で試して分かったこ�
 
 ## なぜ EngineWire を外すのか
 
-| やったこと | 結果 |
-|---|---|
-| そのままパッケージ | ビルドは成功するが、exe が何も表示せず終了する。Development 版のログに `Unable to load plugin 'GameplayAbilities'. Aborting.`。EngineWire が依存先として有効にするプラグインを、付属の `UnrealGame` が読み込めない |
-| `EngineWire` に `"TargetAllowList": ["Editor"]` を付ける | プロジェクト専用の実行ファイルのコンパイルが必要になる。エディタ起動中は Live Coding で止まり、閉じても UE 5.3 と新しい Visual Studio の組み合わせで `__has_feature`（C4668）のエラーになる |
-| `-skipbuild` | `PARORANT-Win64-Shipping.target` が無いと言われ失敗する |
-| **EngineWire を外してパッケージ** | コンパイル不要で成功し、起動する |
-
-Shipping 版はログを出さないので、起動しないときは `-clientconfig=Development` で作って `Windows/PARORANT/Saved/Logs/PARORANT.log` を読む。
+外さないと、ビルドは成功しても exe が起動しない。原因の調査の経過と、そのまま使えるスクリプトは [17](17_build_with_enginewire.md) にまとめた。
 
 ## バージョンとタグ
 

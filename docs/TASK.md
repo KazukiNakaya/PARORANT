@@ -11,7 +11,7 @@
 | 11 | Bot AI の改善 | 完了（撃ち合い中の動きは Step 13 で目視確認） | 高 |
 | 12 | 操作・不具合の修正 | 一部完了（残りは将来対応へ） | 中 |
 | 13 | 目と耳での確認 | 一部完了（耳での確認と細部の目視はユーザー確認待ち） | 中 |
-| 14 | 不要アセットの整理 | **指示があるまで着手しない** | 低 |
+| 14 | 不要アセットの整理 | 一部完了（削除推奨 48 個と BP の未接続ノードは削除済み。要判断は未着手） | 低 |
 | 15 | タイトル・リザルト・スタート画面（**ゴール**） | 実装完了（通しの実機確認はユーザー確認待ち） | 低 |
 | 16 | Bot の撃ち合いの再設計 | 完了（main に反映） | — |
 | 17 | Bot のマクロな立ち回り | 一部完了（到着後の見張り・穴埋め・密集崩し・裏取りの足音は未実装） | 中 |
@@ -75,15 +75,16 @@
 - **確認できていない**：撃ち合い中のストレイフ・距離調整が狙いどおりに動くか（Bot の位置記録では検証しきれなかった）、Bot がピストルを持ったときの向き、歩き・走りの足滑り、発砲アニメの細部、死亡アニメの壁めり込み。いずれも実プレイで見る必要がある。
 - **確認できない（耳）**：Bot の足音・効果音の音量、キルフィードのヘッドショット表記（実際に頭を撃つ操作が必要）。
 
-## Step 14. 不要アセットの整理【指示があるまで着手しない】
+## Step 14. 不要アセットの整理【一部完了（削除推奨のみ。要判断は未着手）】
 
-- [ ] 削除する: `Swat/V2`〜`V6`、`Swat/XBot`、`Swat/V7/Body_001`・`Eyelashes_001`・`HeadGear_001`、`Swat/SK_Swat`、`Swat/swat_lp_Skeleton`、`Swat/swat_lp_PhysicsAsset`（`SK_Swat7` と `swat_v7_PhysicsAsset` は参照が残っているので残す）
-- [ ] 未使用になった `PARORANT/Rifle/SK_AssaultRifle` 系の扱いを決める
-- [ ] `BP_PR_Bot` の未接続ノード（旧ラグドール用の SetCollisionProfileName / SetSimulatePhysics）を削除する
-- [ ] 使わなくなったアニメ（`A_Swat_StrafeL` / `A_Swat_StrafeR` / `A_Swat_RunBack`）と `BS_Swat_Move2D`、`EngageMove` を削除する
-- [ ] `BP_PR_AIController` の未接続ノードを削除する（`EngageSeen` の旧 Stop Movement、`EngageMove` の旧 Add Movement Input ×2。Step 11・13 の置き換えで残った。lint の警告に出る）
-- [ ] `BP_PR_WeaponBase` の旧・簡易振りノードを削除する
-- [ ] 削除の前に、参照の有無をエディタの参照ビューアで確認する
+調査結果と実行結果は [15_asset_cleanup](15_asset_cleanup.md)（§2・§3 が一覧、§6 が実行結果）。
+
+- [x] 削除する: `Swat/V2`〜`V6`、`Swat/XBot`、`Swat/V7/Body_001`・`Eyelashes_001`・`HeadGear_001`、`Swat/SK_Swat`、`Swat/swat_lp_Skeleton`、`Swat/swat_lp_PhysicsAsset`、`BS_Swat_Locomotion`、`A_FP_AssaultRifle_Walk_F_Loop`、`T_PR_LogoMark/logo_mark`（48 個、約 139 MB）
+- [ ] 要判断（未着手）: `SK_Swat7`・`swat_v7_PhysicsAsset`（19 MB）、旧 `BS_Swat_Move2D` と `A_Swat_StrafeL`・`StrafeR`・`RunBack`、ライフル腕一式（`ABP_PR_RifleArms`・`SK_FP_Manny` ほか）、テスト用マップ `L_Proto`・`L_Range`・`BP_TargetDummy`、`SourceArt/Logo` の旧画像と `docs/tools/make_logo.py`
+- [x] `Rifle/SK_AssaultRifle` 系は `BP_PR_WeaponBase` が使用中のため残す（「未使用」は誤り）
+- [x] `BP_PR_Bot` の旧ラグドールノード、`BP_PR_AIController` の旧 Stop Movement・`EngageMove` 関数・`CallRotate` 関数・`Think` の旧ノード、`BP_PR_WeaponBase` の旧・簡易振り、`BP_PR_HUD` の旧描画ノード、`BP_PR_Director` の `Pend*` 変数 5 個、`BP_PR_GameMode.MatchTick` の旧ノードを削除
+- [ ] 要判断（未着手）: `BP_PR_HUD` の `CountEnemies`・`DrawBanner`・`DrawEconomy` 関数と `EnemyAlive` 変数、`BP_PR_Character` の未接続ノード（ライフル腕の結論と一緒に）
+- [x] 削除の前に参照の有無を確認（`asset.inspect_asset` の referencers と、全 `uasset` の名前テーブルの走査）
 
 ## Step 15. タイトル・リザルト・スタート画面【ゴール】
 
