@@ -83,6 +83,7 @@ stateDiagram-v2
 | アーマー | 0 | 25 | 50 |
 | Rotate する | しない | 最寄り1体 | 最寄り1体＋設置前から予測移動 |
 
+- ハードの「設置前の予測移動」は Step 23 で実装（[18](18_skills_minimap.md) §6.5。`CallRotate` ではなく Director の `Predict`）。
 - 最初はノーマルのみで作り、遊んでから値を調整する。
 
 ## ナビゲーション
