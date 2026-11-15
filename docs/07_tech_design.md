@@ -87,7 +87,7 @@ classDiagram
 | `BP_Spike` | Actor | 設置後のスパイク。`AddDefuse`（解除を進める、半分で保存）、`IsBeingDefused`、`Explode`（半径内の全キャラクターに 999 ダメージ）、光の点滅 |
 | `BP_PlantZone` | Actor（Box Collision） | 設置可能エリア（A/B）。`SiteName` を持つ |
 | `BP_HoldPoint` | Actor（Arrow 付き） | Bot の持ち場と見張り方向。`Area`（A / B / Mid）と `bForward`（前に出る位置）を持つ |
-| `BP_SpawnBarrier` | Actor | 購入フェーズ中の壁。`SetBarrierActive(bool)` で当たり判定と見た目を切り替え。幅は `Width` で指定 |
+| `BP_SpawnBarrier` | Actor | 購入フェーズ中の壁。`SetBarrierActive(bool)` で当たり判定と見た目を切り替え。幅は `Width` で指定。見た目は Step 39 で `MI_SpawnBarrier`（半透明のガラス状）に変更 |
 | `BP_PR_HUD` | HUD | 試作用の HUD。Canvas に直接描画（クロスヘア、弾数、体力、ヒット表示） |
 | `BP_TargetDummy` | Actor | 射撃確認用の的人形（部位判定、ダメージ表示、倒れると1.5秒で復活） |
 | `BFL_PR` | BlueprintFunctionLibrary | 共通計算（`ApplyArmor`：アーマー吸収の計算） |

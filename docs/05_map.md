@@ -119,7 +119,7 @@
 
 ## L_Pind（バインドをもじった名前。LP_FPSLite_JC 版・2026-11-06、旧名 L_Nature）
 
-`L_Proto` を複製した `/Game/PARORANT/Maps/L_Pind`。形・当たり判定・持ち場ポイントは L_Proto と同じで、見た目だけ Fab の `LP_FPSLite_JC` に差し替えた。起動マップは L_Pind（GameDefaultMap/EditorStartupMap 設定済み）。壁・床・外周は単色マテリアル `Materials/M_NatureFlat` のインスタンス（MI_Nature_Wall クリーム / MI_Nature_Floor 茶色（バインド風） / MI_Nature_Ring 濃いベージュ）で塗り、LP のパレット柄（縞になる）は使わない。
+`L_Proto` を複製した `/Game/PARORANT/Maps/L_Pind`。形・当たり判定・持ち場ポイントは L_Proto と同じで、見た目だけ Fab の `LP_FPSLite_JC` に差し替えた。起動マップは当初 L_Pind だったが、Step 39（2026-11-15）で L_Canal に切り替えた（[28](28_playtest2_fixes.md) §2.1）。壁・床・外周は単色マテリアル `Materials/M_NatureFlat` のインスタンス（MI_Nature_Wall クリーム / MI_Nature_Floor 茶色（バインド風） / MI_Nature_Ring 濃いベージュ）で塗り、LP のパレット柄（縞になる）は使わない。
 
 - 遮蔽物14個: `SM_Box_01` に差し替え（大きさは元の1m/2m相当に拡縮）
 - 壁パネル46枚（`SM_Wall_01`、フォルダ `Decor`）: 両サイトの奥・外側、防衛スポーン奥、攻撃スポーン奥

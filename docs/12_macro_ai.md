@@ -224,8 +224,9 @@ Bot の判断の優先順位：**交戦 ＞ Director の命令 ＞ 持ち場・�
 | 寄る先 | サイトごとの固定点（ランダム ±300cm）。HoldPoint ベースではない |
 | 裏取りの経路 | `BP_FlankPoint`（L_Pind に 8 個。Step 23、[18](18_skills_minimap.md) §6.6）。`StartFlank` が `Side` 一致のものを `Order` 順に `FlankPath` へ集め、`FlankThink` がたどる。1 個も無ければ従来の直書きの値（X = -1900, -3400, -2000, 300、Y は 1 点目 0・以降 `FlankSide × -3400`）を使う |
 | ベリーハード | ハードと同じ扱い |
-| 穴埋め・密集崩し | **未実装**（`DenseTime` の値だけ難易度で持っている） |
-| 足音を消す、到着後の確認、2 体の合流待ち | **未実装** |
+| 穴埋め・密集崩し・空振り・足音を消す・到着後の確認・2 体の合流待ち | Step 30 で実装（[23](23_bot_human.md) §2.1 の実装結果） |
+| 寄る State | 実物は State 4（仕様の「5」ではない）。`AlertThink` の中でなく `ReinforceThink` が受け持つ |
+| `DenseTime` | 難易度の値（45 / 30 / 20 / 15）を `BalanceTick` の最初の 1 回で入れる。BeginPlay の値（30 固定）は上書きされる |
 
 ### 確認できたこと（PIE、イージー）
 - `StartRound` で Director が生成され、`[Macro]` のログが出る。スクリプトエラーは出ない

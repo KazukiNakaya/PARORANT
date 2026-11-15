@@ -22,7 +22,7 @@ exe の作り方と公開先。v1.0（2026-11-10）で試して分かったこ�
 2. パッケージする
 
    ```
-   RunUAT.bat BuildCookRun -project=<uprojectのフルパス> -noP4 -platform=Win64 -clientconfig=Shipping -build -cook -map=/Game/PARORANT/Maps/L_Pind -stage -pak -prereqs -archive -archivedirectory=<出力先> -utf8output -unattended
+   RunUAT.bat BuildCookRun -project=<uprojectのフルパス> -noP4 -platform=Win64 -clientconfig=Shipping -build -cook -map=/Game/PARORANT/Maps/L_Canal -stage -pak -prereqs -archive -archivedirectory=<出力先> -utf8output -unattended
    ```
 
 3. `PARORANT.uproject` と `Plugins/EngineWire` を元に戻す
