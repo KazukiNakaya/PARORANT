@@ -1,0 +1,11 @@
+[
+ {"name":"pind43_enemy_blane_10m","cam":[-27,34,0],"enemy":[-17,34]},
+ {"name":"pind43_enemy_blane_30m","cam":[-27,34,0],"enemy":[3,34]},
+ {"name":"pind43_enemy_bsite_20m","cam":[13,27,0],"enemy":[33,27]},
+ {"name":"pind43_enemy_bsite_30m","cam":[3,27,0],"enemy":[33,27]},
+ {"name":"pind43_enemy_shade_a","cam":[-27,-35,0],"enemy":[-17,-35]},
+ {"name":"pind43_enemy_shade_b","cam":[13,-35.5,0],"enemy":[23,-35.5]},
+ {"name":"pind43_ally_mid_10m","cam":[-9,0,0],"ally":[1,0]},
+ {"name":"pind43_ally_asite_10m","cam":[13,-27,0],"ally":[23,-27]},
+ {"name":"pind43_enemy_alane_30m","cam":[-27,-34,0],"enemy":[3,-34]}
+]

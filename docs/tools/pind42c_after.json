@@ -1,0 +1,1352 @@
+{
+ "nav": {
+  "atk_A_lane": [
+   86.933,
+   true
+  ],
+  "atk_B_lane": [
+   86.094,
+   true
+  ],
+  "atk_A_mid": [
+   72.172,
+   true
+  ],
+  "atk_B_mid": [
+   72.327,
+   true
+  ],
+  "atk_A_direct": [
+   67.842,
+   true
+  ],
+  "atk_B_direct": [
+   67.333,
+   true
+  ],
+  "def_A": [
+   29.547,
+   true
+  ],
+  "def_B": [
+   29.547,
+   true
+  ]
+ },
+ "holdpath": {
+  "FlankPoint_N_0": [
+   17.0,
+   54.0
+  ],
+  "FlankPoint_N_1": [
+   30.845,
+   86.465
+  ],
+  "FlankPoint_N_2": [
+   41.28,
+   72.182
+  ],
+  "FlankPoint_N_3": [
+   64.859,
+   49.287
+  ],
+  "FlankPoint_P_0": [
+   17.0,
+   54.0
+  ],
+  "FlankPoint_P_1": [
+   30.845,
+   91.499
+  ],
+  "FlankPoint_P_2": [
+   42.119,
+   72.182
+  ],
+  "FlankPoint_P_3": [
+   64.859,
+   49.287
+  ],
+  "Hold_A1": [
+   79.208,
+   35.228
+  ],
+  "Hold_A2": [
+   67.788,
+   21.541
+  ],
+  "Hold_A3": [
+   72.664,
+   42.128
+  ],
+  "Hold_A4": [
+   73.321,
+   17.117
+  ],
+  "Hold_AFwd": [
+   63.96,
+   50.477
+  ],
+  "Hold_B1": [
+   78.701,
+   35.228
+  ],
+  "Hold_B2": [
+   67.411,
+   21.541
+  ],
+  "Hold_B3": [
+   72.12,
+   42.128
+  ],
+  "Hold_B4": [
+   72.943,
+   17.117
+  ],
+  "Hold_BFwd": [
+   63.96,
+   50.477
+  ],
+  "Hold_Mid1": [
+   45.273,
+   31.145
+  ],
+  "Hold_Mid2": [
+   58.0,
+   13.0
+  ],
+  "Hold_Mid3": [
+   45.301,
+   31.215
+  ],
+  "Hold_MidFwd": [
+   34.153,
+   44.366
+  ]
+ },
+ "navgrid": {
+  "count": 6128,
+  "sha1": "162b35a06876f9c90657f1e5b5e8205de495bd4c"
+ },
+ "los": {
+  "CoverA_1_d0_h1.6": [
+   true,
+   499.8,
+   "CoverA_1"
+  ],
+  "CoverA_1_d0_h0.6": [
+   true,
+   499.8,
+   "CoverA_1"
+  ],
+  "CoverA_1_d1_h1.6": [
+   true,
+   499.2,
+   "CoverA_1"
+  ],
+  "CoverA_1_d1_h0.6": [
+   true,
+   499.2,
+   "CoverA_1"
+  ],
+  "CoverA_1_d2_h1.6": [
+   true,
+   459.0,
+   "CoverA_1"
+  ],
+  "CoverA_1_d2_h0.6": [
+   true,
+   0.0,
+   "CoverA_3"
+  ],
+  "CoverA_1_d3_h1.6": [
+   true,
+   459.0,
+   "CoverA_1"
+  ],
+  "CoverA_1_d3_h0.6": [
+   true,
+   459.0,
+   "CoverA_1"
+  ],
+  "CoverA_2_d0_h1.6": [
+   true,
+   1200.0,
+   "Wall_20"
+  ],
+  "CoverA_2_d0_h0.6": [
+   true,
+   499.8,
+   "CoverA_2"
+  ],
+  "CoverA_2_d1_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverA_2_d1_h0.6": [
+   true,
+   499.2,
+   "CoverA_2"
+  ],
+  "CoverA_2_d2_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverA_2_d2_h0.6": [
+   true,
+   459.0,
+   "CoverA_2"
+  ],
+  "CoverA_2_d3_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverA_2_d3_h0.6": [
+   true,
+   459.0,
+   "CoverA_2"
+  ],
+  "CoverA_3_d0_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverA_3_d0_h0.6": [
+   true,
+   499.8,
+   "CoverA_3"
+  ],
+  "CoverA_3_d1_h1.6": [
+   true,
+   0.0,
+   "Wall_14"
+  ],
+  "CoverA_3_d1_h0.6": [
+   true,
+   0.0,
+   "Wall_14"
+  ],
+  "CoverA_3_d2_h1.6": [
+   true,
+   0.0,
+   "Wall_14"
+  ],
+  "CoverA_3_d2_h0.6": [
+   true,
+   0.0,
+   "Wall_14"
+  ],
+  "CoverA_3_d3_h1.6": [
+   true,
+   1165.7,
+   "Wall_14"
+  ],
+  "CoverA_3_d3_h0.6": [
+   true,
+   459.0,
+   "CoverA_3"
+  ],
+  "CoverA_4_d0_h1.6": [
+   true,
+   499.8,
+   "CoverA_4"
+  ],
+  "CoverA_4_d0_h0.6": [
+   true,
+   499.8,
+   "CoverA_4"
+  ],
+  "CoverA_4_d1_h1.6": [
+   true,
+   499.2,
+   "CoverA_4"
+  ],
+  "CoverA_4_d1_h0.6": [
+   true,
+   499.2,
+   "CoverA_4"
+  ],
+  "CoverA_4_d2_h1.6": [
+   true,
+   459.0,
+   "CoverA_4"
+  ],
+  "CoverA_4_d2_h0.6": [
+   true,
+   459.0,
+   "CoverA_4"
+  ],
+  "CoverA_4_d3_h1.6": [
+   true,
+   459.0,
+   "CoverA_4"
+  ],
+  "CoverA_4_d3_h0.6": [
+   true,
+   459.0,
+   "CoverA_4"
+  ],
+  "CoverA_5_d0_h1.6": [
+   true,
+   0.0,
+   "Wall_06"
+  ],
+  "CoverA_5_d0_h0.6": [
+   true,
+   0.0,
+   "Wall_06"
+  ],
+  "CoverA_5_d1_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverA_5_d1_h0.6": [
+   true,
+   524.4,
+   "CoverA_5"
+  ],
+  "CoverA_5_d2_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverA_5_d2_h0.6": [
+   true,
+   494.3,
+   "CoverA_5"
+  ],
+  "CoverA_5_d3_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverA_5_d3_h0.6": [
+   true,
+   494.3,
+   "CoverA_5"
+  ],
+  "CoverB_1_d0_h1.6": [
+   true,
+   499.8,
+   "CoverB_1"
+  ],
+  "CoverB_1_d0_h0.6": [
+   true,
+   499.8,
+   "CoverB_1"
+  ],
+  "CoverB_1_d1_h1.6": [
+   true,
+   499.2,
+   "CoverB_1"
+  ],
+  "CoverB_1_d1_h0.6": [
+   true,
+   499.2,
+   "CoverB_1"
+  ],
+  "CoverB_1_d2_h1.6": [
+   true,
+   459.0,
+   "CoverB_1"
+  ],
+  "CoverB_1_d2_h0.6": [
+   true,
+   459.0,
+   "CoverB_1"
+  ],
+  "CoverB_1_d3_h1.6": [
+   true,
+   459.0,
+   "CoverB_1"
+  ],
+  "CoverB_1_d3_h0.6": [
+   true,
+   0.0,
+   "CoverB_3"
+  ],
+  "CoverB_2_d0_h1.6": [
+   true,
+   1200.0,
+   "Wall_21"
+  ],
+  "CoverB_2_d0_h0.6": [
+   true,
+   499.8,
+   "CoverB_2"
+  ],
+  "CoverB_2_d1_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverB_2_d1_h0.6": [
+   true,
+   499.2,
+   "CoverB_2"
+  ],
+  "CoverB_2_d2_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverB_2_d2_h0.6": [
+   true,
+   459.0,
+   "CoverB_2"
+  ],
+  "CoverB_2_d3_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverB_2_d3_h0.6": [
+   true,
+   459.0,
+   "CoverB_2"
+  ],
+  "CoverB_3_d0_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverB_3_d0_h0.6": [
+   true,
+   499.8,
+   "CoverB_3"
+  ],
+  "CoverB_3_d1_h1.6": [
+   true,
+   1000.0,
+   "Wall_15"
+  ],
+  "CoverB_3_d1_h0.6": [
+   true,
+   499.2,
+   "CoverB_3"
+  ],
+  "CoverB_3_d2_h1.6": [
+   true,
+   1165.7,
+   "Wall_15"
+  ],
+  "CoverB_3_d2_h0.6": [
+   true,
+   459.0,
+   "CoverB_3"
+  ],
+  "CoverB_3_d3_h1.6": [
+   true,
+   0.0,
+   "Wall_15"
+  ],
+  "CoverB_3_d3_h0.6": [
+   true,
+   0.0,
+   "Wall_15"
+  ],
+  "CoverB_4_d0_h1.6": [
+   true,
+   499.8,
+   "CoverB_4"
+  ],
+  "CoverB_4_d0_h0.6": [
+   true,
+   499.8,
+   "CoverB_4"
+  ],
+  "CoverB_4_d1_h1.6": [
+   true,
+   499.2,
+   "CoverB_4"
+  ],
+  "CoverB_4_d1_h0.6": [
+   true,
+   499.2,
+   "CoverB_4"
+  ],
+  "CoverB_4_d2_h1.6": [
+   true,
+   459.0,
+   "CoverB_4"
+  ],
+  "CoverB_4_d2_h0.6": [
+   true,
+   459.0,
+   "CoverB_4"
+  ],
+  "CoverB_4_d3_h1.6": [
+   true,
+   459.0,
+   "CoverB_4"
+  ],
+  "CoverB_4_d3_h0.6": [
+   true,
+   459.0,
+   "CoverB_4"
+  ],
+  "CoverB_5_d0_h1.6": [
+   true,
+   0.0,
+   "Wall_07"
+  ],
+  "CoverB_5_d0_h0.6": [
+   true,
+   0.0,
+   "Wall_07"
+  ],
+  "CoverB_5_d1_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverB_5_d1_h0.6": [
+   true,
+   524.4,
+   "CoverB_5"
+  ],
+  "CoverB_5_d2_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverB_5_d2_h0.6": [
+   true,
+   494.3,
+   "CoverB_5"
+  ],
+  "CoverB_5_d3_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverB_5_d3_h0.6": [
+   true,
+   494.3,
+   "CoverB_5"
+  ],
+  "CoverMid_1_d0_h1.6": [
+   true,
+   499.8,
+   "CoverMid_1"
+  ],
+  "CoverMid_1_d0_h0.6": [
+   true,
+   499.8,
+   "CoverMid_1"
+  ],
+  "CoverMid_1_d1_h1.6": [
+   true,
+   499.2,
+   "CoverMid_1"
+  ],
+  "CoverMid_1_d1_h0.6": [
+   true,
+   499.2,
+   "CoverMid_1"
+  ],
+  "CoverMid_1_d2_h1.6": [
+   true,
+   459.0,
+   "CoverMid_1"
+  ],
+  "CoverMid_1_d2_h0.6": [
+   true,
+   459.0,
+   "CoverMid_1"
+  ],
+  "CoverMid_1_d3_h1.6": [
+   true,
+   459.0,
+   "CoverMid_1"
+  ],
+  "CoverMid_1_d3_h0.6": [
+   true,
+   459.0,
+   "CoverMid_1"
+  ],
+  "CoverMid_2_d0_h1.6": [
+   true,
+   0.0,
+   "Wall_02"
+  ],
+  "CoverMid_2_d0_h0.6": [
+   true,
+   0.0,
+   "Wall_02"
+  ],
+  "CoverMid_2_d1_h1.6": [
+   true,
+   0.0,
+   "Wall_04"
+  ],
+  "CoverMid_2_d1_h0.6": [
+   true,
+   0.0,
+   "Wall_04"
+  ],
+  "CoverMid_2_d2_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverMid_2_d2_h0.6": [
+   true,
+   459.0,
+   "CoverMid_2"
+  ],
+  "CoverMid_2_d3_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverMid_2_d3_h0.6": [
+   true,
+   459.0,
+   "CoverMid_2"
+  ],
+  "CoverALane_d0_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverALane_d0_h0.6": [
+   true,
+   499.8,
+   "CoverALane"
+  ],
+  "CoverALane_d1_h1.6": [
+   true,
+   0.0,
+   "Wall_W"
+  ],
+  "CoverALane_d1_h0.6": [
+   true,
+   0.0,
+   "Wall_W"
+  ],
+  "CoverALane_d2_h1.6": [
+   true,
+   0.0,
+   "Wall_00"
+  ],
+  "CoverALane_d2_h0.6": [
+   true,
+   0.0,
+   "Wall_00"
+  ],
+  "CoverALane_d3_h1.6": [
+   true,
+   0.0,
+   "Wall_02"
+  ],
+  "CoverALane_d3_h0.6": [
+   true,
+   0.0,
+   "Wall_02"
+  ],
+  "CoverBLane_d0_h1.6": [
+   false,
+   null,
+   null
+  ],
+  "CoverBLane_d0_h0.6": [
+   true,
+   499.8,
+   "CoverBLane"
+  ],
+  "CoverBLane_d1_h1.6": [
+   true,
+   0.0,
+   "Wall_03"
+  ],
+  "CoverBLane_d1_h0.6": [
+   true,
+   0.0,
+   "Wall_03"
+  ],
+  "CoverBLane_d2_h1.6": [
+   true,
+   0.0,
+   "Wall_03"
+  ],
+  "CoverBLane_d2_h0.6": [
+   true,
+   0.0,
+   "Wall_03"
+  ],
+  "CoverBLane_d3_h1.6": [
+   true,
+   0.0,
+   "Wall_01"
+  ],
+  "CoverBLane_d3_h0.6": [
+   true,
+   0.0,
+   "Wall_01"
+  ],
+  "Hold_A1_to0": [
+   true,
+   861.5,
+   "CoverA_1"
+  ],
+  "Hold_A1_to1": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A1_to2": [
+   true,
+   1511.2,
+   "CoverA_4"
+  ],
+  "Hold_A1_to3": [
+   true,
+   2538.1,
+   "Wall_16"
+  ],
+  "Hold_A1_to4": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A1_to5": [
+   true,
+   792.5,
+   "CoverA_1"
+  ],
+  "Hold_A1_to6": [
+   true,
+   2069.2,
+   "Wall_16"
+  ],
+  "Hold_A1_to7": [
+   true,
+   2334.7,
+   "Wall_16"
+  ],
+  "Hold_A2_to0": [
+   true,
+   1322.0,
+   "Wall_16"
+  ],
+  "Hold_A2_to1": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A2_to2": [
+   true,
+   1003.7,
+   "Wall_18"
+  ],
+  "Hold_A2_to3": [
+   true,
+   672.0,
+   "Wall_16"
+  ],
+  "Hold_A2_to4": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A2_to5": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A2_to6": [
+   true,
+   670.8,
+   "Wall_16"
+  ],
+  "Hold_A2_to7": [
+   true,
+   908.1,
+   "Wall_12"
+  ],
+  "Hold_A3_to0": [
+   true,
+   851.5,
+   "Wall_09"
+  ],
+  "Hold_A3_to1": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A3_to2": [
+   true,
+   2116.4,
+   "Wall_16"
+  ],
+  "Hold_A3_to3": [
+   true,
+   798.5,
+   "Wall_06"
+  ],
+  "Hold_A3_to4": [
+   true,
+   3069.2,
+   "Wall_18"
+  ],
+  "Hold_A3_to5": [
+   true,
+   1092.0,
+   "Wall_06"
+  ],
+  "Hold_A3_to6": [
+   true,
+   2516.0,
+   "Wall_12"
+  ],
+  "Hold_A3_to7": [
+   true,
+   2119.1,
+   "Wall_16"
+  ],
+  "Hold_A4_to0": [
+   true,
+   926.9,
+   "Wall_16"
+  ],
+  "Hold_A4_to1": [
+   true,
+   282.8,
+   "CoverA_4"
+  ],
+  "Hold_A4_to2": [
+   true,
+   2153.7,
+   "Wall_19"
+  ],
+  "Hold_A4_to3": [
+   true,
+   1012.4,
+   "Wall_16"
+  ],
+  "Hold_A4_to4": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A4_to5": [
+   false,
+   null,
+   null
+  ],
+  "Hold_A4_to6": [
+   true,
+   865.5,
+   "Wall_18"
+  ],
+  "Hold_A4_to7": [
+   true,
+   881.2,
+   "Wall_18"
+  ],
+  "Hold_AFwd_to0": [
+   true,
+   590.4,
+   "Wall_04"
+  ],
+  "Hold_AFwd_to1": [
+   true,
+   843.0,
+   "Wall_09"
+  ],
+  "Hold_AFwd_to2": [
+   true,
+   422.3,
+   "Wall_04"
+  ],
+  "Hold_AFwd_to3": [
+   true,
+   400.7,
+   "Wall_04"
+  ],
+  "Hold_AFwd_to4": [
+   true,
+   549.8,
+   "Wall_06"
+  ],
+  "Hold_AFwd_to5": [
+   true,
+   426.3,
+   "Wall_04"
+  ],
+  "Hold_AFwd_to6": [
+   true,
+   403.8,
+   "Wall_04"
+  ],
+  "Hold_AFwd_to7": [
+   true,
+   449.8,
+   "Wall_06"
+  ],
+  "Hold_B1_to0": [
+   true,
+   863.1,
+   "CoverB_1"
+  ],
+  "Hold_B1_to1": [
+   true,
+   1512.1,
+   "CoverB_4"
+  ],
+  "Hold_B1_to2": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B1_to3": [
+   true,
+   2538.1,
+   "Wall_17"
+  ],
+  "Hold_B1_to4": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B1_to5": [
+   true,
+   2069.2,
+   "Wall_17"
+  ],
+  "Hold_B1_to6": [
+   true,
+   792.5,
+   "CoverB_1"
+  ],
+  "Hold_B1_to7": [
+   true,
+   2334.7,
+   "Wall_17"
+  ],
+  "Hold_B2_to0": [
+   true,
+   1322.0,
+   "Wall_17"
+  ],
+  "Hold_B2_to1": [
+   true,
+   1003.7,
+   "Wall_19"
+  ],
+  "Hold_B2_to2": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B2_to3": [
+   true,
+   672.0,
+   "Wall_17"
+  ],
+  "Hold_B2_to4": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B2_to5": [
+   true,
+   670.8,
+   "Wall_17"
+  ],
+  "Hold_B2_to6": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B2_to7": [
+   true,
+   908.1,
+   "Wall_13"
+  ],
+  "Hold_B3_to0": [
+   true,
+   851.5,
+   "Wall_10"
+  ],
+  "Hold_B3_to1": [
+   true,
+   2116.4,
+   "Wall_17"
+  ],
+  "Hold_B3_to2": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B3_to3": [
+   true,
+   798.5,
+   "Wall_07"
+  ],
+  "Hold_B3_to4": [
+   true,
+   3069.2,
+   "Wall_19"
+  ],
+  "Hold_B3_to5": [
+   true,
+   2516.0,
+   "Wall_13"
+  ],
+  "Hold_B3_to6": [
+   true,
+   1092.0,
+   "Wall_07"
+  ],
+  "Hold_B3_to7": [
+   true,
+   2119.1,
+   "Wall_17"
+  ],
+  "Hold_B4_to0": [
+   true,
+   926.9,
+   "Wall_17"
+  ],
+  "Hold_B4_to1": [
+   true,
+   2153.7,
+   "Wall_18"
+  ],
+  "Hold_B4_to2": [
+   true,
+   282.8,
+   "CoverB_4"
+  ],
+  "Hold_B4_to3": [
+   true,
+   1012.4,
+   "Wall_17"
+  ],
+  "Hold_B4_to4": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B4_to5": [
+   true,
+   865.5,
+   "Wall_19"
+  ],
+  "Hold_B4_to6": [
+   false,
+   null,
+   null
+  ],
+  "Hold_B4_to7": [
+   true,
+   881.2,
+   "Wall_19"
+  ],
+  "Hold_BFwd_to0": [
+   true,
+   590.4,
+   "Wall_05"
+  ],
+  "Hold_BFwd_to1": [
+   true,
+   422.3,
+   "Wall_05"
+  ],
+  "Hold_BFwd_to2": [
+   true,
+   843.0,
+   "Wall_10"
+  ],
+  "Hold_BFwd_to3": [
+   true,
+   400.7,
+   "Wall_05"
+  ],
+  "Hold_BFwd_to4": [
+   true,
+   549.8,
+   "Wall_07"
+  ],
+  "Hold_BFwd_to5": [
+   true,
+   403.8,
+   "Wall_05"
+  ],
+  "Hold_BFwd_to6": [
+   true,
+   426.3,
+   "Wall_05"
+  ],
+  "Hold_BFwd_to7": [
+   true,
+   449.8,
+   "Wall_07"
+  ],
+  "Hold_Mid1_to0": [
+   true,
+   1837.3,
+   "Wall_03"
+  ],
+  "Hold_Mid1_to1": [
+   true,
+   520.1,
+   "Wall_13"
+  ],
+  "Hold_Mid1_to2": [
+   true,
+   312.5,
+   "Wall_13"
+  ],
+  "Hold_Mid1_to3": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid1_to4": [
+   true,
+   210.8,
+   "Wall_13"
+  ],
+  "Hold_Mid1_to5": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid1_to6": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid1_to7": [
+   true,
+   250.0,
+   "Wall_13"
+  ],
+  "Hold_Mid2_to0": [
+   true,
+   4980.0,
+   "Barrier_Mid"
+  ],
+  "Hold_Mid2_to1": [
+   true,
+   400.4,
+   "Wall_12"
+  ],
+  "Hold_Mid2_to2": [
+   true,
+   400.4,
+   "Wall_13"
+  ],
+  "Hold_Mid2_to3": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid2_to4": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid2_to5": [
+   true,
+   515.4,
+   "Wall_12"
+  ],
+  "Hold_Mid2_to6": [
+   true,
+   515.4,
+   "Wall_13"
+  ],
+  "Hold_Mid2_to7": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid3_to0": [
+   true,
+   1837.3,
+   "Wall_02"
+  ],
+  "Hold_Mid3_to1": [
+   true,
+   312.5,
+   "Wall_12"
+  ],
+  "Hold_Mid3_to2": [
+   true,
+   520.1,
+   "Wall_12"
+  ],
+  "Hold_Mid3_to3": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid3_to4": [
+   true,
+   210.8,
+   "Wall_12"
+  ],
+  "Hold_Mid3_to5": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid3_to6": [
+   false,
+   null,
+   null
+  ],
+  "Hold_Mid3_to7": [
+   true,
+   250.0,
+   "Wall_12"
+  ],
+  "Hold_MidFwd_to0": [
+   true,
+   212.4,
+   "Wall_02"
+  ],
+  "Hold_MidFwd_to1": [
+   true,
+   416.0,
+   "Wall_04"
+  ],
+  "Hold_MidFwd_to2": [
+   true,
+   2803.0,
+   "Wall_13"
+  ],
+  "Hold_MidFwd_to3": [
+   false,
+   null,
+   null
+  ],
+  "Hold_MidFwd_to4": [
+   true,
+   1848.0,
+   "Wall_12"
+  ],
+  "Hold_MidFwd_to5": [
+   true,
+   600.9,
+   "Wall_04"
+  ],
+  "Hold_MidFwd_to6": [
+   true,
+   1671.3,
+   "CoverMid_1"
+  ],
+  "Hold_MidFwd_to7": [
+   false,
+   null,
+   null
+  ]
+ },
+ "colliders": {
+  "count": 94,
+  "sha1": "a588e0586ecee355141f0275529a25fe2f4ace5b",
+  "list": [
+   "Barrier_A|-2800.0,-3400.0,200.0|20.0,300.0,200.0|BlockAllDynamic,NoCollision,NoCollision",
+   "Barrier_B|-2800.0,3400.0,200.0|20.0,300.0,200.0|BlockAllDynamic,NoCollision,NoCollision",
+   "Barrier_Mid|-2800.0,0.0,200.0|20.0,300.0,200.0|BlockAllDynamic,NoCollision,NoCollision",
+   "Bld_AtkE|-3350.0,3400.0,175.0|258.0,266.3,175.0|BlockAll",
+   "Bld_AtkW|-3350.0,-3400.0,175.0|258.0,266.3,175.0|BlockAll",
+   "CoverALane|-1200.0,-3500.0,50.0|100.0,100.0,50.0|BlockAll",
+   "CoverA_1|2400.0,-3000.0,100.0|100.0,100.0,99.9|BlockAll",
+   "CoverA_2|2800.0,-2400.0,50.0|100.0,100.0,50.0|BlockAll",
+   "CoverA_3|1900.0,-3400.0,50.0|100.0,100.0,50.0|BlockAll",
+   "CoverA_4|3000.0,-1900.0,100.0|100.0,100.0,99.9|BlockAll",
+   "CoverA_5|1700.0,-2400.0,50.0|75.0,75.0,50.0|BlockAll",
+   "CoverBLane|-1200.0,3500.0,50.0|100.0,100.0,50.0|BlockAll",
+   "CoverB_1|2400.0,3000.0,100.0|100.0,100.0,99.9|BlockAll",
+   "CoverB_2|2800.0,2400.0,50.0|100.0,100.0,50.0|BlockAll",
+   "CoverB_3|1900.0,3400.0,50.0|100.0,100.0,50.0|BlockAll",
+   "CoverB_4|3000.0,1900.0,100.0|100.0,100.0,99.9|BlockAll",
+   "CoverB_5|1700.0,2400.0,50.0|75.0,75.0,50.0|BlockAll",
+   "CoverMid_1|200.0,500.0,100.0|100.0,100.0,99.9|BlockAll",
+   "CoverMid_2|-400.0,-600.0,50.0|100.0,100.0,50.0|BlockAll",
+   "Floor|0.0,0.0,-50.0|4100.0,4100.0,50.0|BlockAll",
+   "Panel_ASiteBack_1|3385.0,-3600.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_ASiteBack_2|3385.0,-3200.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_ASiteBack_3|3385.0,-2800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_ASiteBack_4|3385.0,-2400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_ASiteBack_5|3385.0,-2000.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_ASiteSide_1|1400.0,-3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_ASiteSide_2|1800.0,-3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_ASiteSide_3|2200.0,-3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_ASiteSide_4|2600.0,-3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_ASiteSide_5|3000.0,-3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_ASiteSide_6|3400.0,-3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_AtkBack_10|-3985.0,0.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_11|-3985.0,400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_12|-3985.0,800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_13|-3985.0,1200.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_14|-3985.0,1600.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_15|-3985.0,2000.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_16|-3985.0,2400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_17|-3985.0,2800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_18|-3985.0,3200.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_19|-3985.0,3600.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_1|-3985.0,-3600.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_2|-3985.0,-3200.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_3|-3985.0,-2800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_4|-3985.0,-2400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_5|-3985.0,-2000.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_6|-3985.0,-1600.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_7|-3985.0,-1200.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_8|-3985.0,-800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_AtkBack_9|-3985.0,-400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_BSiteBack_1|3385.0,2000.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_BSiteBack_2|3385.0,2400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_BSiteBack_3|3385.0,2800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_BSiteBack_4|3385.0,3200.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_BSiteBack_5|3385.0,3600.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_BSiteSide_1|1400.0,3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_BSiteSide_2|1800.0,3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_BSiteSide_3|2200.0,3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_BSiteSide_4|2600.0,3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_BSiteSide_5|3000.0,3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_BSiteSide_6|3400.0,3785.0,120.0|200.0,15.0,120.0|BlockAll",
+   "Panel_DefBack_1|3985.0,-800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_DefBack_2|3985.0,-400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_DefBack_3|3985.0,0.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_DefBack_4|3985.0,400.0,120.0|15.0,200.0,120.0|BlockAll",
+   "Panel_DefBack_5|3985.0,800.0,120.0|15.0,200.0,120.0|BlockAll",
+   "PlantZone_A|2300.0,-2700.0,150.0|450.0,450.0,150.0|NoCollision,NoCollision,NoCollision,OverlapAllDynamic",
+   "PlantZone_B|2300.0,2700.0,150.0|450.0,450.0,150.0|NoCollision,NoCollision,NoCollision,OverlapAllDynamic",
+   "Wall_00|-1400.0,-3850.0,200.0|2600.0,150.0,200.0|BlockAll",
+   "Wall_01|-1400.0,3850.0,200.0|2600.0,150.0,200.0|BlockAll",
+   "Wall_02|-1900.0,-1700.0,200.0|900.0,1400.0,200.0|BlockAll",
+   "Wall_03|-1900.0,1700.0,200.0|900.0,1400.0,200.0|BlockAll",
+   "Wall_04|-300.0,-2150.0,200.0|700.0,950.0,200.0|BlockAll",
+   "Wall_05|-300.0,2150.0,200.0|700.0,950.0,200.0|BlockAll",
+   "Wall_06|800.0,-2550.0,200.0|400.0,550.0,200.0|BlockAll",
+   "Wall_07|800.0,2550.0,200.0|400.0,550.0,200.0|BlockAll",
+   "Wall_08|900.0,-3650.0,200.0|300.0,50.0,200.0|BlockAll",
+   "Wall_09|900.0,-3150.0,200.0|300.0,50.0,200.0|BlockAll",
+   "Wall_10|900.0,3150.0,200.0|300.0,50.0,200.0|BlockAll",
+   "Wall_11|900.0,3650.0,200.0|300.0,50.0,200.0|BlockAll",
+   "Wall_12|1700.0,-800.0,200.0|700.0,400.0,200.0|BlockAll",
+   "Wall_13|1700.0,800.0,200.0|700.0,400.0,200.0|BlockAll",
+   "Wall_14|2600.0,-3900.0,200.0|1400.0,100.0,200.0|BlockAll",
+   "Wall_15|2600.0,3900.0,200.0|1400.0,100.0,200.0|BlockAll",
+   "Wall_16|1900.0,-1400.0,200.0|500.0,200.0,200.0|BlockAll",
+   "Wall_17|1900.0,1400.0,200.0|500.0,200.0,200.0|BlockAll",
+   "Wall_18|2700.0,-700.0,200.0|300.0,300.0,200.0|BlockAll",
+   "Wall_19|2700.0,700.0,200.0|300.0,300.0,200.0|BlockAll",
+   "Wall_20|3700.0,-2700.0,200.0|300.0,1100.0,200.0|BlockAll",
+   "Wall_21|3700.0,2700.0,200.0|300.0,1100.0,200.0|BlockAll",
+   "Wall_E|0.0,4050.0,200.0|4000.0,50.0,200.0|BlockAll",
+   "Wall_N|4050.0,0.0,200.0|50.0,4100.0,200.0|BlockAll",
+   "Wall_S|-4050.0,0.0,200.0|50.0,4100.0,200.0|BlockAll",
+   "Wall_W|0.0,-4050.0,200.0|4000.0,50.0,200.0|BlockAll"
+  ]
+ }
+}

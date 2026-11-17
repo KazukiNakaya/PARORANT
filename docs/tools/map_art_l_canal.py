@@ -735,8 +735,7 @@ if unreal is not None:
     # 道の角・壁ぎわに、Meshy で作った樽（SM_BarrelSmall：高さ 70cm、直径 約 59cm、原点は底面の中央、簡易コリジョン＝凸形状 1 個で上面は平ら）を
     # 1〜3 個ずつ置く。遮蔽の箱と同じ当たり判定（BlockAll）。ナビメッシュに影響する（静的な障害物。置いたあとにナビメッシュをビルドする）。
     # タグ CanalDeco、フォルダ Art/Deco。作り直しは冒頭で「タグ CanalArt / CanalDeco のアクタを消す」
-    DECO_MESH = "/Game/PARORANT/Art/Props/SM_BarrelSmall"
-    DECO_MAT = "/Game/PARORANT/Art/Props/MI_Barrel"
+    PROP_DIR = "/Game/PARORANT/Art/Props/"
     DECO_SITES = [   # (番号, 場所, [(X m, Y m, 向き yaw 度, 縮尺), ...])  docs/26 §10.4。Saved の配置計算（角から壁ぎわに寄せ、制約を確認済み）の結果
         ("D01", "船着き場の南西の隅", [(-35.691, -29.691, 234.3, 0.96), (-35.687, -29.077, 182.7, 0.91), (-35.075, -29.708, 152.8, 0.91)]),
         ("D02", "船着き場の北東の隅", [(-35.660, 29.650, 80.4, 1.07), (-35.637, 28.942, 351.5, 1.03)]),
@@ -751,23 +750,46 @@ if unreal is not None:
         ("D11", "B の広場の南の壁ぎわ", [(21.867, 14.352, 233.0, 0.91), (22.583, 14.387, 138.9, 1.10)]),
         ("D12", "岸壁の道の南の壁ぎわ", [(-18.698, 24.354, 166.2, 1.03)]),
     ]
-    if ea.does_asset_exist(DECO_MESH):
-        _dm, _dmat = ea.load_asset(DECO_MESH), ea.load_asset(DECO_MAT)
-        n_deco = 0
-        for sid, _desc, bl in DECO_SITES:
-            for k, (bx, by, yaw, sc) in enumerate(bl):
-                a = eas.spawn_actor_from_class(unreal.StaticMeshActor, unreal.Vector(cm(bx), cm(by), 0.0), unreal.Rotator(0.0, 0.0, yaw))
-                a.set_actor_label("Deco_Barrel_%s_%d" % (sid, k + 1))
-                a.set_folder_path("Art/Deco")
-                c = a.static_mesh_component
-                c.set_mobility(unreal.ComponentMobility.STATIC)
-                c.set_static_mesh(_dm)
-                a.set_actor_scale3d(unreal.Vector(sc, sc, sc))
-                c.set_material(0, _dmat)
-                c.set_collision_profile_name("BlockAll")
-                a.set_editor_property("tags", [unreal.Name("CanalDeco")])
-                n_deco += 1
-        print("DECO barrels", n_deco, "sites", len(DECO_SITES))
+    # Step 42b D：樽 21 個のうち 11 個を、小箱・麻袋・植木鉢・壺に入れ替えた（位置は同じ 12 か所）。種類は場所ごとの表
+    DECO_KINDS = {"D01": ["barrel", "crate", "barrel"], "D02": ["barrel", "pot"], "D03": ["crate"], "D04": ["barrel"],
+                  "D05": ["sack", "barrel"], "D06": ["barrel", "amphora"], "D07": ["pot", "barrel"], "D08": ["amphora"],
+                  "D09": ["barrel", "crate"], "D10": ["amphora", "barrel"], "D11": ["sack", "barrel"], "D12": ["pot"]}
+    # 種類 → (メッシュ, 素材（None=メッシュのまま）, 樽に対する縮尺比。幅・高さが樽（縮尺 sc の幅 58.7×sc、高さ 70×sc cm）より広がらない値)
+    DECO_KIND = {"barrel": ("SM_BarrelSmall", "MI_Barrel", 1.0), "crate": ("SM_CrateSmall", None, 0.85), "sack": ("SM_SackPile", None, 1.0),
+                 "pot": ("SM_PotPlant", None, 0.74), "amphora": ("SM_Amphora", None, 0.93)}
+    n_deco = 0
+    for sid, _desc, bl in DECO_SITES:
+        for k, (bx, by, yaw, sc0) in enumerate(bl):
+            kind = DECO_KINDS[sid][k]
+            mesh, mat, rel = DECO_KIND[kind]
+            a = eas.spawn_actor_from_class(unreal.StaticMeshActor, unreal.Vector(cm(bx), cm(by), 0.0), unreal.Rotator(0.0, 0.0, yaw))
+            a.set_actor_label("Deco_%s_%s_%d" % (kind.capitalize(), sid, k + 1))
+            a.set_folder_path("Art/Deco")
+            c = a.static_mesh_component
+            c.set_mobility(unreal.ComponentMobility.STATIC)
+            c.set_static_mesh(ea.load_asset(PROP_DIR + mesh))
+            sc = sc0 * rel
+            a.set_actor_scale3d(unreal.Vector(sc, sc, sc))
+            if mat:
+                c.set_material(0, ea.load_asset(PROP_DIR + mat))
+            c.set_collision_profile_name("BlockAll")
+            a.set_editor_property("tags", [unreal.Name("CanalDeco")])
+            n_deco += 1
+    print("DECO items", n_deco, "sites", len(DECO_SITES))
+
+    # 運河の水面に小舟 2 艘（Step 42b D。当たり判定なし。水面は高さ -0.8m、運河は X 0〜6m。橋（跳ね橋 Y -2.5〜2.5、石橋 Y 24〜28）と岸の歩ける範囲
+    # （運河の両側 1.9m 以上離れる）から離す。船底を水面の下へ沈め、上端が岸の床（0m）より低くなるようにして、視線を遮らない）
+    for (bx, by, yaw) in ((3.0, 13.0, 94.0), (3.1, 32.5, 83.0)):
+        a = eas.spawn_actor_from_class(unreal.StaticMeshActor, unreal.Vector(cm(bx), cm(by), cm(-1.45)), unreal.Rotator(0.0, 0.0, yaw))
+        a.set_actor_label("Art_Rowboat")
+        a.set_folder_path("Art")
+        c = a.static_mesh_component
+        c.set_mobility(unreal.ComponentMobility.STATIC)
+        c.set_static_mesh(ea.load_asset(PROP_DIR + "SM_Rowboat"))
+        c.set_collision_profile_name("NoCollision")
+        c.set_collision_enabled(unreal.CollisionEnabled.NO_COLLISION)
+        c.set_editor_property("can_ever_affect_navigation", False)
+        a.set_editor_property("tags", [unreal.Name("CanalArt")])
 
     # ---------------------------------------------------------------- ISM に流し込む
     total = 0

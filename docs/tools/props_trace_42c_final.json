@@ -1,0 +1,162 @@
+{
+ "SM_CrateSmall": {
+  "bbox_cm": [
+   -34.2,
+   34.2,
+   -34.0,
+   34.0,
+   0.0,
+   60.0
+  ],
+  "tris": 988,
+  "rays": 868,
+  "both": 842,
+  "visible_but_no_collision_hit": 0,
+  "pass_max_cm": 0.0,
+  "pass_over10": 0,
+  "pass_over5": 0,
+  "pass_n": 3,
+  "ghost_max_cm": 5.68,
+  "ghost_over10": 0,
+  "ghost_over5": 41,
+  "ghost_n": 848,
+  "worst_pass": [
+   0.0,
+   [
+    33.3,
+    184.0,
+    7.5
+   ],
+   [
+    0,
+    -1,
+    0
+   ]
+  ],
+  "worst_ghost": [
+   1.55,
+   [
+    13.3,
+    33.5,
+    210.0
+   ],
+   [
+    0,
+    0,
+    -1
+   ]
+  ],
+  "zcap": null
+ },
+ "SM_SackPile": {
+  "bbox_cm": [
+   -28.6,
+   28.6,
+   -28.6,
+   28.6,
+   0.0,
+   55.0
+  ],
+  "tris": 2078,
+  "rays": 605,
+  "both": 515,
+  "visible_but_no_collision_hit": 0,
+  "pass_max_cm": 0.06,
+  "pass_over10": 0,
+  "pass_over5": 0,
+  "pass_n": 235,
+  "ghost_max_cm": 0.0,
+  "ghost_over10": 0,
+  "ghost_over5": 0,
+  "ghost_n": 280,
+  "worst_pass": [
+   0.06,
+   [
+    -11.1,
+    -178.6,
+    27.5
+   ],
+   [
+    0,
+    1,
+    0
+   ]
+  ],
+  "worst_ghost": null,
+  "zcap": null
+ },
+ "SM_PotPlant": {
+  "bbox_cm": [
+   -39.4,
+   39.4,
+   -38.9,
+   38.9,
+   0.0,
+   114.9
+  ],
+  "tris": 778,
+  "rays": 704,
+  "both": 598,
+  "visible_but_no_collision_hit": 16,
+  "pass_max_cm": 9.32,
+  "pass_over10": 0,
+  "pass_over5": 14,
+  "pass_n": 613,
+  "ghost_max_cm": 0.04,
+  "ghost_over10": 0,
+  "ghost_over5": 0,
+  "ghost_n": 1,
+  "worst_pass": [
+   9.32,
+   [
+    38.1,
+    188.9,
+    32.5
+   ],
+   [
+    0,
+    -1,
+    0
+   ]
+  ],
+  "worst_ghost": null,
+  "zcap": 55.0
+ },
+ "SM_Amphora": {
+  "bbox_cm": [
+   -24.0,
+   24.0,
+   -23.9,
+   23.9,
+   0.0,
+   75.0
+  ],
+  "tris": 1616,
+  "rays": 700,
+  "both": 478,
+  "visible_but_no_collision_hit": 0,
+  "pass_max_cm": 0.0,
+  "pass_over10": 0,
+  "pass_over5": 0,
+  "pass_n": 222,
+  "ghost_max_cm": 0.0,
+  "ghost_over10": 0,
+  "ghost_over5": 0,
+  "ghost_n": 256,
+  "worst_pass": [
+   0.0,
+   [
+    23.5,
+    3.6,
+    225.0
+   ],
+   [
+    0,
+    0,
+    -1
+   ]
+  ],
+  "worst_ghost": null,
+  "zcap": null
+ }
+}

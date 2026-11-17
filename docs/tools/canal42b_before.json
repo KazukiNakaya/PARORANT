@@ -1,0 +1,26 @@
+{
+ "atk_A_lane": [
+  74.689,
+  true
+ ],
+ "atk_B_quay": [
+  67.072,
+  true
+ ],
+ "atk_A_bridge": [
+  68.052,
+  true
+ ],
+ "def_A": [
+  32.032,
+  true
+ ],
+ "def_B": [
+  28.114,
+  true
+ ],
+ "atk_bridge_def": [
+  63.607,
+  true
+ ]
+}

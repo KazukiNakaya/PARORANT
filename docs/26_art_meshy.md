@@ -464,3 +464,29 @@ Meshy・画像生成・外部素材のダウンロードは使っていない。
 ### 11.6 SkillPress の確認（0 の修正）
 - L_Canal の PIE で `SkillPress` をスロット 0・1・2 で、購入フェーズ中（0 のみ）と戦闘中（0・1・2）に `call_actor_function` で呼び、`Blueprint Runtime Error` は 0 件（修正前は呼ぶたびに 2 件）。購入フェーズの終わりにスロット 2 でも呼んだ（`TryBuySkill` のあと）
 - **スキルの効果（回数が減る、効果が出る）は確認できていない**：呼んだ時点でスキルの回数が 0（購入していない、または購入フェーズが終わっていた）で、`[Skill] ... used` のログが出なかった。分岐の条件・呼び出す関数は変えていない（先頭にキャストを足しただけ）ので動きは変わらない見込みだが、実際に購入して撃つ確認はユーザーの試遊に任せる
+
+
+### 10.9 Meshy の小物の一覧（Step 42b 追記、2026-11-16。詳細は [29](29_pind_tropical.md) §4 Step 42b）
+
+`Content/PARORANT/Art/Props/` に、樽のほかに次の 9 個を足した（`docs/tools/import_props_42b.py`、Blender 側は `docs/tools/blender_props_42b.py`）。素材は共通の親 `M_Prop`（片面）・`M_PropFoliage`（両面）のインスタンス（`Desat` で彩度を落とす、`Brightness` で明るさをそろえる）。
+
+| メッシュ | 使い方 | 三角形 | 大きさ cm | コリジョン |
+|---|---|---|---|---|
+| `SM_PalmTall`・`SM_PalmBent`・`SM_TropicBush`・`SM_Rowboat`・`SM_Parasol` | 場外の飾り（PIND。小舟は CANAL の運河にも） | 3,055・2,841・1,967・2,523・1,576 | 高さ 900・550・110・128（長さ 380）・240 | なし |
+| `SM_CrateSmall`・`SM_SackPile`・`SM_PotPlant`・`SM_Amphora` | 角の小物（樽以外が PIND に 15 個、CANAL に 11 個。樽と同じ決まり） | 988・2,078・2,172・1,616 | 高さ 60・55・115（鉢 約 55）・75 | 凸 1 個（`UseSimpleAsComplex`）。ずれは Blender の実測で、見えないのに当たる最大 5〜9cm、見えているのに抜ける最大 7〜24cm |
+
+- 取り込み：`AssetImportTask`（Interchange）で `UCX_<名前>_00` が凸 1 個になる。樽のときの「`import_translation` を無視する」問題は、Blender で原点と大きさを整えてあるので起きない。素材とテクスチャは `import_props_42b.py` が `MI_*`・`T_*_BaseColor`（最大 1024）に整える
+- 置く決まりは §10.4・§10.6 と同じ。オフラインの計算は `docs/tools/map_deco_sites_l_pind.py`（PIND）、小物の上からの新しい視線の確認は `docs/tools/map_deco_check_l_pind.py`（`DECO_TAG` で PIND／CANAL 共通）、経路は `map_verify_l_pind.py`・`map_verify_l_canal.py`
+- 見た目の判定：9 個とも使えた。写実寄りの小舟・壺は `Desat` 0.4 で、ほかと同じ調子に収まった
+
+### 10.10 角の小物のコリジョンの作り直し（Step 42c、2026-11-16）
+
+- 樽以外の 4 種のずれをエンジンの中で測った（`docs/tools/map_props_trace_42c.py`。測り方は [29](29_pind_tropical.md) §4「42c 続き」）。小箱は「見えているのに抜ける」0、「見えないのに当たる」最大 5.7cm で、凸 1 個のまま。
+- 麻袋（凸 4 個）、壺（凸 3 個、胴・首・口）、植木鉢（鉢だけ凸 1 個）に作り直した（`blender_props_42b.py` の `col_mode`：`islands:4`、`zsplit:3`、`potisland`。環境変数 `PROPS_COLMODE`・`PROPS_COLTRIS` で試せる）。Blender の最短距離の最大：麻袋 24.2→2.7、植木鉢 17.4→10.1、壺 15.9→14.1（口の内側を含む）。
+- エンジンのレイでは、麻袋 22.3cm・植木鉢 25.7cm（抜ける）、壺 70.5cm（口の穴で当たる）が残った。レイに沿った差は輪郭のへりで大きく出る。10cm を切れなかった項目として記録。
+
+### 10.11 当たり判定の方針の変更（Step 42c 続き 3、2026-11-16）
+
+- 麻袋・壺：Collision Complexity を Use Complex Collision As Simple に変更（見た目の三角形をそのまま使う。凸形状は残るが使われない）。エンジンのトレースで、見えているのに抜ける最大 0.06cm（麻袋）・0cm（壺）、見えないのに当たる 0cm。プレイヤーが上に立てる、足もとで引っかからない（[29](29_pind_tropical.md) §4「42c 続き 3」）
+- 植木鉢：鉢だけの凸 1 個のまま、三角形の上限を 32 から 120 に。上限で底が円錐になっていたのが 25.7cm の原因（測り方の問題ではない）。抜ける最大 9.32cm、当たる 0.04cm
+- 注意：Python でフラグだけ変えても当たり判定は作り直されない。`allow_cpu_access` を True→False にして変更イベントを出す（`import_props_42b.py`）

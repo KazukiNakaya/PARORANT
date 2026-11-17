@@ -43,7 +43,7 @@ try {
 
   & "C:\Program Files\Epic Games\UE_5.3\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun `
     -project="$up" -noP4 -platform=Win64 -clientconfig=Shipping -build -cook `
-    -map=/Game/PARORANT/Maps/L_Canal -stage -pak -prereqs `
+    -map=/Game/PARORANT/Maps/L_Canal+/Game/PARORANT/Maps/L_Pind -stage -pak -prereqs `
     -archive -archivedirectory="$rel\$ver" -utf8output -unattended *> "$rel\package_$ver.log"
   "EXIT=$LASTEXITCODE"
 } finally {
