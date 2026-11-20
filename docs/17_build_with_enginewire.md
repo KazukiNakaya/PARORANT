@@ -24,7 +24,7 @@ Unreal Editor を**閉じて**から、PowerShell で次を実行する。失敗
 
 ```powershell
 $proj = "C:\Users\kazuk\Documents\Repository\UnrealEngine\PARORANT"
-$rel  = "C:\Users\kazuk\Documents\PARORANT_Release"
+$rel  = "C:SERSKAZUKDOCUMENTSREPOSITORYNREALENGINEPARORANTRELEASEBUILDS"
 $ver  = "v1.0"
 $up   = "$proj\PARORANT.uproject"
 $bak  = "$rel\PARORANT.uproject.bak"

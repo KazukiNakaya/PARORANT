@@ -534,3 +534,11 @@
 - [x] [16](16_release.md) を見直した（GitHub は Public、作業フォルダ、GIF の大きさの上限、GitHub への反映と Release の手順）
 - [x] 不要になった控え `PARORANT_Release\_uncommitted_v2.1\` を削除
 - [x] GitHub `KazukiNakaya/PARORANT` に README・docs・動画を反映し、Release `v2.1` に `PARORANT-v2.1-Win64.zip` を上げた
+- [x] ソース一式の zip（`PARORANT-v2.1-Source.zip`、632MB、802 ファイル。EngineWire・docs・orders は含めない）を Release `v2.1` に追加
+
+## Step 48. リリース用フォルダをプロジェクト内に集約【完了】
+
+ブランチ `step48/release-folder`。2026-11-20、ユーザーの指示。
+
+- [x] `Documents\PARORANT_Release` → `Release/Builds`、`Documents\PARORANT_GitHub` → `Release/GitHub` に移し、`/Release/` を `.gitignore` に追加
+- [x] [16](16_release.md)・[17](17_build_with_enginewire.md) の置き場所とソースの zip の手順を更新
