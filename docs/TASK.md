@@ -177,7 +177,7 @@
 
 ## 運用（要相談）
 
-- [ ] `AGENTS.md` と `CLAUDE.md`（`@AGENTS.md` を取り込むだけの薄いファイル）を作る
+- [x] `AGENTS.md` と `CLAUDE.md`（`@AGENTS.md` を取り込むだけの薄いファイル）を作る（2026-11-20。Git の手順、Unreal MCP での確認の注意、置き場所とフォルダ構成）
 - [x] `orders/order_YYYYMMDD.md` にスレッドごとの記録を残す運用を始める
 - [ ] 初回コミットに生のバイナリで入っている大きな uasset・glb の扱い。LFS へ移すには履歴の書き換え（force push）が必要なので、必要になったら相談する
 

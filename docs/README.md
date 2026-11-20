@@ -1,14 +1,15 @@
 # PARORANT 仕様書
 
 VALORANT のパロディとして試作する、1人 vs Bot のタクティカル FPS「PARORANT（パロラント）」の仕様書です。
-非公開の個人試作なので、権利関係は考慮しません。
+個人の試作です。開発の本体は非公開の Azure DevOps に置き、README・docs・exe とソースの zip は GitHub（Public）で公開しています（[16](16_release.md)）。新しい素材を足すときは、再配布の条件を確認してから載せます。
 
 | 項目 | 内容 |
 |---|---|
 | エンジン | Unreal Engine 5.3（Blueprint 中心） |
 | ベース | First Person テンプレート |
 | プロジェクト | `Documents/Repository/UnrealEngine/PARORANT` |
-| 状態 | **v1.0 リリース済み**（手順は [16](16_release.md)）。v0.33：Step 10〜13・15〜20 実施済み（Bot の撃ち合い・マクロ AI、タイトルとロゴ、しゃがみ、HUD・難易度の作り直し、プレイ確認後の修正）。次は Step 21 のスキル。残りは [TASK.md](TASK.md)（Step 14 の不要アセット整理は削除推奨のみ完了、要判断は未着手） |
+| 状態 | **v2.1 リリース済み**（2026-11-16。マップは PACENT と PIND の 2 つを抽選）。手順は [16](16_release.md)。残りは [TASK.md](TASK.md) |
+| AI 向けの作業ルール | プロジェクト直下の `AGENTS.md`（Git の手順、Unreal MCP での確認の注意、フォルダ構成） |
 
 ## 目次
 
